@@ -10,6 +10,7 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #24252a;
@@ -59,7 +60,7 @@ nav ul li {
 .nav_links li a:hover {
   color: #ad4c4c;
 }
-button {
+header button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   background-color: var(--primary-color);
@@ -81,37 +82,22 @@ button:hover {
   left: 8%;
   transform: translateY(-50%);
 }
-h1 {
+.hero-content h1 {
   color: #fff;
   margin: 20px 0px 20px;
-  font-size: 70px;
+  font-size: 60px;
 }
-h3 {
+.hero-content p {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 25px;
+  font-size: 20px;
 }
-h4 {
+.hero-content h4 {
   color: #585c63;
   font-size: 20px;
   letter-spacing: 2px;
 }
-.newslatter form {
-  width: 380px;
-  max-width: 100%;
-  position: relative;
-}
-.newslatter form input:first-child {
-  display: inline-block;
-  width: 100%;
-  padding: 14px 130px 14px 15px;
-  border: 2px solid var(--primary-color);
-  outline: none;
-  border-radius: 30px;
-}
-.newslatter form input:last-child {
-  position: absolute;
-  display: inline-block;
+.hero-content .hire-btn {
   outline: none;
   border: none;
   padding: 10px 30px;
@@ -121,7 +107,6 @@ h4 {
   cursor: pointer;
   box-shadow: 0 0 5px #000, 0 0 15px #868686;
   top: 6px;
-  right: 6px;
 }
 .share {
   position: absolute;
@@ -133,7 +118,7 @@ h4 {
   align-items: center;
 }
 .share p {
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   margin-right: 60px;
 }
@@ -187,20 +172,43 @@ h4 {
   font-size: 60px;
   position: absolute;
 }
-
-.about-me-intro {
-  padding: 20px 80px;
-}
-.about-me-intro h2 {
+main {
+  padding: 20px 60px;
   color: #fff;
-  margin-bottom: 10px;
 }
-.about-me-intro div {
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.intro h2{
+  font-weight: 700;
+  font-size: 35px;
+}
+.intro div {
   background-color: var(--secondary-color);
-  width: 100px;
+  width: 80px;
   height: 8px;
   border-radius: 10px;
-  margin-left: 5px;
+  margin-left: 15px;
+}
+
+/* .contact-me-intro {
+    
+} */
+
+footer {
+  padding: 4rem;
+  color: #fff;
+}
+footer h5 {
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer span {
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 1090px) {
